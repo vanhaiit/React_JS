@@ -13,6 +13,14 @@ const routes = [
         exact: true,
         main: () => <ProductListPage />
     }, {
+        path: '/customer',
+        exact: true,
+        main: () => <ProductListPage />
+    }, {
+        path: '/user',
+        exact: true,
+        main: () => <ProductListPage />
+    }, {
         path: '/products/add',
         exact: true,
         main: ({ history }) => <ProductActionPage history={history} />
