@@ -1,50 +1,42 @@
 import React, { Component } from 'react';
-import { Route, Link } from "react-router-dom";
+import { Route, Link } from 'react-router-dom';
 
 const menus = [
     {
-        name: 'Trang chủ',
+        name: 'Trang Chủ',
         to: '/',
         icon: 'fa fa-home',
         exact: true
     },
     {
-        name: 'Sản phẩm',
-        to: 'products',
+        name: 'Quản Lý Sản Phẩm',
+        to: '/products',
         icon: 'fa fa-cube',
         exact: false
-    }, {
-        name: 'Dịch vụ',
-        to: 'customer',
-        icon: 'fa fa-coffee',
-        exact: false
-    }, {
-        name: 'Khách hàng',
-        to: 'user',
-        icon: 'fa fa-user',
-        exact: false
     }
-]
-const MenuLink = ({ lable, icon, to, activeOnlyWhenExact }) => {
+];
+
+const MenuLink = ({ label, icon, to, activeOnlyWhenExact }) => {
     return (
         <Route
-            patch={to}
+            path={to}
             exact={activeOnlyWhenExact}
             children={({ match }) => {
-                var active = match ? ' active' : '';
+                var active = match ? 'nav-item active' : 'nav-item';
                 console.log(match);
                 return (
-                    <li className={`nav-item ${active}`}>
-                        <Link className={'nav-link'} to={to}>
+                    <li className={active}>
+                        <Link className="nav-link" to={to}>
                             <i className={icon}></i>
-                            <p>{lable}</p>
+                            <p>{label}</p>
                         </Link>
                     </li>
                 );
             }}
         />
     );
-}
+};
+
 class Menu extends Component {
     render() {
         return (
@@ -71,16 +63,15 @@ class Menu extends Component {
                 return (
                     <MenuLink
                         key={index}
-                        lable={menu.name}
+                        label={menu.name}
                         to={menu.to}
                         icon={menu.icon}
                         activeOnlyWhenExact={menu.exact}
                     />
-
                 )
             });
-            return result;
         }
+        return result;
     }
 }
 
