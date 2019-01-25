@@ -19,7 +19,7 @@ class ProductList extends Component {
                                             <th>Tên</th>
                                             <th>Giá</th>
                                             <th>Trạng thái</th>
-                                            <th style={{ width: "17%" }}>Tùy chọn</th>
+                                            <th style={{ width: "22%" }}>Tùy chọn</th>
                                         </tr>
                                     </thead>
                                     <tbody>
