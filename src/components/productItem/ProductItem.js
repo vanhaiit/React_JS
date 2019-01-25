@@ -6,7 +6,6 @@ class ProductItem extends Component {
     onDelete = (id) => {
         if (confirm('Bạn muốn xóa sản phẩm này ?')) {//eslint-disable-line
             this.props.onDelete(id);
-
         }
     }
     render() {
@@ -15,7 +14,7 @@ class ProductItem extends Component {
         var status_class = product.status ? 'success' : 'danger'
         return (
             <tr>
-                <td scope="row">{index}</td>
+                <td >{index}</td>
                 <td>{product.id}</td>
                 <td>{product.name}</td>
                 <td>{product.price}</td>
@@ -23,8 +22,8 @@ class ProductItem extends Component {
                     <label className={`label label-${status_class}`}>{status_name}</label>
                 </td>
                 <td>
-                    <Link to={`products/${product.id}`} className="btn btn-outline-success ml-10" >edit</Link>
-                    <button type="button" className="btn btn-outline-danger ml-10" onClick={() => this.onDelete(product.id)} >delete</button>
+                    <Link to={`products/${product.id}`} className="btn btn-outline-info ml-10 btn-sm" >edit</Link>
+                    <button type="button" className="btn btn-outline-danger ml-10 btn-sm" onClick={() => this.onDelete(product.id)} >delete</button>
                 </td>
             </tr>
         );

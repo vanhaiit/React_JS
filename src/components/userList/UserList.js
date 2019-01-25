@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-class ProductList extends Component {
+class UserList extends Component {
     render() {
+
         return (
             <div className="row">
                 <div className="col-md-12">
@@ -17,8 +18,8 @@ class ProductList extends Component {
                                             <th>STT</th>
                                             <th>Mã</th>
                                             <th>Tên</th>
-                                            <th>Giá</th>
-                                            <th>Trạng thái</th>
+                                            <th>Ngày sinh</th>
+                                            <th>Ghi chú</th>
                                             <th style={{ width: "17%" }}>Tùy chọn</th>
                                         </tr>
                                     </thead>
@@ -35,4 +36,4 @@ class ProductList extends Component {
     }
 }
 
-export default ProductList;
+export default UserList;

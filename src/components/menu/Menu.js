@@ -3,15 +3,45 @@ import { Route, Link } from 'react-router-dom';
 
 const menus = [
     {
-        name: 'Trang Chủ',
+        name: 'Home',
         to: '/',
         icon: 'fa fa-home',
         exact: true
     },
     {
-        name: 'Quản Lý Sản Phẩm',
+        name: 'Products',
         to: '/products',
         icon: 'fa fa-cube',
+        exact: false
+    },
+    {
+        name: 'User Profile',
+        to: '/users',
+        icon: 'fa fa-user',
+        exact: false
+    },
+    {
+        name: 'Icon',
+        to: '/icons',
+        icon: 'fa fa-gg-circle',
+        exact: false
+    },
+    {
+        name: 'Maps',
+        to: '/maps',
+        icon: 'fa fa-map-marker',
+        exact: false
+    },
+    {
+        name: 'Notification',
+        to: '/notification',
+        icon: 'fa fa-bell-o',
+        exact: false
+    },
+    {
+        name: 'URL support',
+        to: '/url',
+        icon: 'fa fa-medkit',
         exact: false
     }
 ];
@@ -23,7 +53,6 @@ const MenuLink = ({ label, icon, to, activeOnlyWhenExact }) => {
             exact={activeOnlyWhenExact}
             children={({ match }) => {
                 var active = match ? 'nav-item active' : 'nav-item';
-                console.log(match);
                 return (
                     <li className={active}>
                         <Link className="nav-link" to={to}>
@@ -42,10 +71,8 @@ class Menu extends Component {
         return (
 
             <div className="sidebar" data-color="purple" data-background-color="white" data-image="public/assets/img/sidebar-1.jpg">
-                <div className="logo">
-                    <a href="http://www.creative-tim.com" className="simple-text logo-normal">
-                        REACT_JS V.1
-              </a>
+                <div className="logo" style={{ background: "indigo" }}>
+                    <a href="http://www.creative-tim.com" style={{ color: "white", fontWeight: "bold" }} className="simple-text logo-normal"> REACT_JS V.1 </a>
                 </div>
                 <div className="sidebar-wrapper">
                     <ul className="nav">
@@ -53,7 +80,6 @@ class Menu extends Component {
                     </ul>
                 </div>
             </div>
-
         );
     }
     showMenus = (menus) => {

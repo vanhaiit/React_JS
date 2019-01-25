@@ -42,11 +42,11 @@ class Navbar extends Component {
             </p>
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                    <a className="dropdown-item" >Mike John responded to your email</a>
-                                    <a className="dropdown-item" >You have 5 new tasks</a>
-                                    <a className="dropdown-item" >You're now friend with Andrew</a>
-                                    <a className="dropdown-item" >Another Notification</a>
-                                    <a className="dropdown-item" >Another One</a>
+                                    <i className="dropdown-item" >Mike John responded to your email</i>
+                                    <i className="dropdown-item" >You have 5 new tasks</i>
+                                    <i className="dropdown-item" >You're now friend with Andrew</i>
+                                    <i className="dropdown-item" >Another Notification</i>
+                                    <i className="dropdown-item" >Another One</i>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
@@ -57,10 +57,10 @@ class Navbar extends Component {
             </p>
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                                    <a className="dropdown-item" >Profile</a>
-                                    <a className="dropdown-item" >Settings</a>
+                                    <i className="dropdown-item" >Profile</i>
+                                    <i className="dropdown-item" >Settings</i>
                                     <div className="dropdown-divider" />
-                                    <a className="dropdown-item" >Log out</a>
+                                    <i className="dropdown-item" >Log out</i>
                                 </div>
                             </li>
                         </ul>

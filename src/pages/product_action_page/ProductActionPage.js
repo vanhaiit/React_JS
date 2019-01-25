@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import callApi from './../../utils/apiCaller';
+import { toast } from 'react-toastify';
 
 class ProductActionPage extends Component {
+    check_edit = false;
     constructor(props) {
         super(props);
         this.state = {
@@ -14,9 +16,8 @@ class ProductActionPage extends Component {
     componentDidMount() {
         var match = this.props.match;
         if (match) var id = match.params.id;
-        console.log(id);
         if (id) {
-            callApi(`users/${id}`, 'GET', null).then((res) => {
+            callApi(`products/${id}`, 'GET', null).then((res) => {
                 if (res) {
                     this.setState({
                         id: res.data.id,
@@ -26,7 +27,9 @@ class ProductActionPage extends Component {
                     })
                 }
             })
+            return this.check_edit = true;
         }
+        return this.check_edit = false;
     }
 
     onChange = (e) => {
@@ -38,25 +41,22 @@ class ProductActionPage extends Component {
         })
     }
 
-    onSubmit = (e) => {
+    onSubmit = async (e) => {
         e.preventDefault();
         var { history } = this.props;
-        if (this.state.id) {
-            callApi(`users/${this.state.id}`, 'PUT', this.state).then((res) => {
-                return history.goBack();
-            })
-            return true;
-        }
-        callApi('users', 'POST', this.state).then((res) => {
+        var respond;
+        if (this.check_edit) {
+            respond = await callApi(`products/${this.state.id}`, 'PUT', this.state);
+            (respond.status === 200) ? toast.success("Cập nhật thành công.!") : toast.error("Cập nhật thất bại.!");
             return history.goBack();
-        })
-
-
+        }
+        respond = await callApi('products', 'POST', this.state);
+        (respond.status === 201) ? toast.success("Thêm mới thành công.!") : toast.error("Thêm mới thất bại.!");
+        return history.goBack();
     }
 
     render() {
         var { id, name, price, status } = this.state;
-
         return (
             <div className="container">
                 <br></br>

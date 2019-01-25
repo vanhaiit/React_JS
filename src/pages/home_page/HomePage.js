@@ -121,10 +121,10 @@ class HomePage extends Component {
                                                     </td>
                                                     <td>Sign contract for "What are conference organizers afraid of?"</td>
                                                     <td className="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title className="btn btn-primary btn-link btn-sm" data-original-title="Edit Task">
+                                                        <button type="button" rel="tooltip" className="btn btn-primary btn-link btn-sm">
                                                             <i className="material-icons">edit</i>
                                                         </button>
-                                                        <button type="button" rel="tooltip" title className="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <button type="button" rel="tooltip" className="btn btn-danger btn-link btn-sm">
                                                             <i className="material-icons">close</i>
                                                         </button>
                                                     </td>
@@ -142,10 +142,10 @@ class HomePage extends Component {
                                                     </td>
                                                     <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
                                                     <td className="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title className="btn btn-primary btn-link btn-sm" data-original-title="Edit Task">
+                                                        <button type="button" rel="tooltip" className="btn btn-primary btn-link btn-sm">
                                                             <i className="material-icons">edit</i>
                                                         </button>
-                                                        <button type="button" rel="tooltip" title className="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <button type="button" rel="tooltip" className="btn btn-danger btn-link btn-sm">
                                                             <i className="material-icons">close</i>
                                                         </button>
                                                     </td>
@@ -164,10 +164,10 @@ class HomePage extends Component {
                                                     <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
                   </td>
                                                     <td className="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title className="btn btn-primary btn-link btn-sm" data-original-title="Edit Task">
+                                                        <button type="button" rel="tooltip" className="btn btn-primary btn-link btn-sm">
                                                             <i className="material-icons">edit</i>
                                                         </button>
-                                                        <button type="button" rel="tooltip" title className="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <button type="button" rel="tooltip" className="btn btn-danger btn-link btn-sm">
                                                             <i className="material-icons">close</i>
                                                         </button>
                                                     </td>
@@ -185,10 +185,10 @@ class HomePage extends Component {
                                                     </td>
                                                     <td>Create 4 Invisible User Experiences you Never Knew About</td>
                                                     <td className="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title className="btn btn-primary btn-link btn-sm" data-original-title="Edit Task">
+                                                        <button type="button" rel="tooltip" className="btn btn-primary btn-link btn-sm">
                                                             <i className="material-icons">edit</i>
                                                         </button>
-                                                        <button type="button" rel="tooltip" title className="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <button type="button" rel="tooltip" className="btn btn-danger btn-link btn-sm">
                                                             <i className="material-icons">close</i>
                                                         </button>
                                                     </td>
@@ -213,10 +213,10 @@ class HomePage extends Component {
                                                     <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
                   </td>
                                                     <td className="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title className="btn btn-primary btn-link btn-sm" data-original-title="Edit Task">
+                                                        <button type="button" rel="tooltip" className="btn btn-primary btn-link btn-sm">
                                                             <i className="material-icons">edit</i>
                                                         </button>
-                                                        <button type="button" rel="tooltip" title className="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <button type="button" rel="tooltip" className="btn btn-danger btn-link btn-sm">
                                                             <i className="material-icons">close</i>
                                                         </button>
                                                     </td>
@@ -234,10 +234,10 @@ class HomePage extends Component {
                                                     </td>
                                                     <td>Sign contract for "What are conference organizers afraid of?"</td>
                                                     <td className="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title className="btn btn-primary btn-link btn-sm" data-original-title="Edit Task">
+                                                        <button type="button" rel="tooltip" className="btn btn-primary btn-link btn-sm">
                                                             <i className="material-icons">edit</i>
                                                         </button>
-                                                        <button type="button" rel="tooltip" title className="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <button type="button" rel="tooltip" className="btn btn-danger btn-link btn-sm">
                                                             <i className="material-icons">close</i>
                                                         </button>
                                                     </td>
@@ -261,10 +261,10 @@ class HomePage extends Component {
                                                     </td>
                                                     <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
                                                     <td className="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title className="btn btn-primary btn-link btn-sm" data-original-title="Edit Task">
+                                                        <button type="button" rel="tooltip" className="btn btn-primary btn-link btn-sm">
                                                             <i className="material-icons">edit</i>
                                                         </button>
-                                                        <button type="button" rel="tooltip" title className="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <button type="button" rel="tooltip" className="btn btn-danger btn-link btn-sm">
                                                             <i className="material-icons">close</i>
                                                         </button>
                                                     </td>
@@ -283,10 +283,10 @@ class HomePage extends Component {
                                                     <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
                   </td>
                                                     <td className="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title className="btn btn-primary btn-link btn-sm" data-original-title="Edit Task">
+                                                        <button type="button" rel="tooltip" className="btn btn-primary btn-link btn-sm">
                                                             <i className="material-icons">edit</i>
                                                         </button>
-                                                        <button type="button" rel="tooltip" title className="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <button type="button" rel="tooltip" className="btn btn-danger btn-link btn-sm">
                                                             <i className="material-icons">close</i>
                                                         </button>
                                                     </td>
@@ -304,10 +304,10 @@ class HomePage extends Component {
                                                     </td>
                                                     <td>Sign contract for "What are conference organizers afraid of?"</td>
                                                     <td className="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title className="btn btn-primary btn-link btn-sm" data-original-title="Edit Task">
+                                                        <button type="button" rel="tooltip" className="btn btn-primary btn-link btn-sm">
                                                             <i className="material-icons">edit</i>
                                                         </button>
-                                                        <button type="button" rel="tooltip" title className="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <button type="button" rel="tooltip" className="btn btn-danger btn-link btn-sm">
                                                             <i className="material-icons">close</i>
                                                         </button>
                                                     </td>
