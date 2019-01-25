@@ -34,18 +34,12 @@ class ProductListPage extends Component {
 
         var { products } = this.props;
         return (
-            <main role="main" className="container">
-
-                <div className="my-3 p-3 bg-white rounded shadow-sm">
-                    <h6 className="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
-                    <ProductList>
-                        {this.showProduct(products)}
-                    </ProductList>
-                    <small className="d-block text-right mt-3">
-                        <Link to="products/add">Thêm mới</Link>
-                    </small>
-                </div>
-            </main>
+            <div>
+                <ProductList>
+                    {this.showProduct(products)}
+                </ProductList>
+                <Link className="btn btn-primary pull-right" to="products/add">Thêm mới</Link>
+            </div>
         );
     }
     showProduct(products) {

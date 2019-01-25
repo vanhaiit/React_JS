@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+            <nav className="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " style={{ borderBottom: '1px solid #ccc' }}>
                 <div className="container-fluid">
                     <div className="navbar-wrapper">
-                        <a className="navbar-brand" href="#pablo">Table List</a>
+                        <a className="navbar-brand" href="#pablo"></a>
                     </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="sr-only">Toggle navigation</span>
