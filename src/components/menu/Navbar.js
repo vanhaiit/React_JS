@@ -6,7 +6,7 @@ class Navbar extends Component {
             <nav className="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " style={{ borderBottom: '1px solid #ccc' }}>
                 <div className="container-fluid">
                     <div className="navbar-wrapper">
-                        <a className="navbar-brand" href="#pablo"></a>
+                        <i className="navbar-brand"></i>
                     </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="sr-only">Toggle navigation</span>
@@ -30,7 +30,7 @@ class Navbar extends Component {
                                     <i className="material-icons">dashboard</i>
                                     <p className="d-lg-none d-md-block">
                                         Stats
-            </p>
+                                     </p>
                                 </a>
                             </li>
                             <li className="nav-item dropdown">
@@ -39,7 +39,7 @@ class Navbar extends Component {
                                     <span className="notification">5</span>
                                     <p className="d-lg-none d-md-block">
                                         Some Actions
-            </p>
+                                    </p>
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                                     <i className="dropdown-item" >Mike John responded to your email</i>
@@ -54,7 +54,7 @@ class Navbar extends Component {
                                     <i className="material-icons">person</i>
                                     <p className="d-lg-none d-md-block">
                                         Account
-            </p>
+                                    </p>
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
                                     <i className="dropdown-item" >Profile</i>
@@ -67,8 +67,6 @@ class Navbar extends Component {
                     </div>
                 </div>
             </nav>
-
-
         );
     }
 

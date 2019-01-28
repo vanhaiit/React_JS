@@ -21,8 +21,8 @@ const menus = [
         exact: false
     },
     {
-        name: 'Icon',
-        to: '/icons',
+        name: 'Chat',
+        to: '/chat',
         icon: 'fa fa-gg-circle',
         exact: false
     },

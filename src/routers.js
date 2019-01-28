@@ -4,6 +4,7 @@ import NotFound from './pages/not_found_page/NotFoundPage';
 import ProductListPage from './pages/product_list_page/ProductListPage';
 import ProductActionPage from './pages/product_action_page/ProductActionPage';
 import UserListPage from './pages/user_list_page/UserListPage';
+import Chat from './components/chat/chat';
 const routes = [
     {
         path: '/',
@@ -21,6 +22,10 @@ const routes = [
         path: '/users',
         exact: true,
         main: () => <UserListPage />
+    }, {
+        path: '/chat',
+        exact: true,
+        main: () => <Chat />
     }, {
         path: '/products/add',
         exact: true,

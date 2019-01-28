@@ -7,8 +7,11 @@ import Footer from './components/footer/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 class App extends Component {
   render() {
+
+
     return (
       <Router>
         <div className="App">
@@ -25,7 +28,6 @@ class App extends Component {
           <div className="wrapper">
             {/* header */}
             <Menu />
-
             <div className="main-panel">
               <Navbar />
               {/* Navbar */}
